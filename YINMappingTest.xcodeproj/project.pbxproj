@@ -13,9 +13,9 @@
 		18A0F94E215F4D50002C9531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A0F94D215F4D50002C9531 /* Assets.xcassets */; };
 		18A0F951215F4D50002C9531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A0F94F215F4D50002C9531 /* LaunchScreen.storyboard */; };
 		18A0F954215F4D50002C9531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F953215F4D50002C9531 /* main.m */; };
-		18A0F95F215F4D84002C9531 /* YINBindObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F95B215F4D84002C9531 /* YINBindObj.m */; };
-		18A0F960215F4D84002C9531 /* NSObject+YINMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F95E215F4D84002C9531 /* NSObject+YINMapping.m */; };
 		18A0F963215F5044002C9531 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F962215F5044002C9531 /* Person.m */; };
+		18A0F9B8215F78BE002C9531 /* YINBindObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F9B4215F78BE002C9531 /* YINBindObj.m */; };
+		18A0F9B9215F78BE002C9531 /* NSObject+YINMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F9B7215F78BE002C9531 /* NSObject+YINMapping.m */; };
 		D11097EB5FC0B88919AE6B8E /* Pods_YINMappingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732456B942E6C9B64FFB539B /* Pods_YINMappingTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,12 +31,12 @@
 		18A0F950215F4D50002C9531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A0F952215F4D50002C9531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A0F953215F4D50002C9531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18A0F95B215F4D84002C9531 /* YINBindObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YINBindObj.m; sourceTree = "<group>"; };
-		18A0F95C215F4D84002C9531 /* NSObject+YINMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YINMapping.h"; sourceTree = "<group>"; };
-		18A0F95D215F4D84002C9531 /* YINBindObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YINBindObj.h; sourceTree = "<group>"; };
-		18A0F95E215F4D84002C9531 /* NSObject+YINMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YINMapping.m"; sourceTree = "<group>"; };
 		18A0F961215F5044002C9531 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		18A0F962215F5044002C9531 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		18A0F9B4215F78BE002C9531 /* YINBindObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YINBindObj.m; sourceTree = "<group>"; };
+		18A0F9B5215F78BE002C9531 /* NSObject+YINMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YINMapping.h"; sourceTree = "<group>"; };
+		18A0F9B6215F78BE002C9531 /* YINBindObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YINBindObj.h; sourceTree = "<group>"; };
+		18A0F9B7215F78BE002C9531 /* NSObject+YINMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YINMapping.m"; sourceTree = "<group>"; };
 		54F8330A45C6BF3B96D21CDC /* Pods-YINMappingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YINMappingTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YINMappingTest/Pods-YINMappingTest.debug.xcconfig"; sourceTree = "<group>"; };
 		732456B942E6C9B64FFB539B /* Pods_YINMappingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YINMappingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 		18A0F943215F4D4D002C9531 /* YINMappingTest */ = {
 			isa = PBXGroup;
 			children = (
-				18A0F95A215F4D84002C9531 /* MapingKit */,
+				18A0F9B2215F78BE002C9531 /* Classes */,
 				18A0F944215F4D4D002C9531 /* AppDelegate.h */,
 				18A0F945215F4D4D002C9531 /* AppDelegate.m */,
 				18A0F947215F4D4D002C9531 /* ViewController.h */,
@@ -90,13 +90,21 @@
 			path = YINMappingTest;
 			sourceTree = "<group>";
 		};
-		18A0F95A215F4D84002C9531 /* MapingKit */ = {
+		18A0F9B2215F78BE002C9531 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18A0F95D215F4D84002C9531 /* YINBindObj.h */,
-				18A0F95B215F4D84002C9531 /* YINBindObj.m */,
-				18A0F95C215F4D84002C9531 /* NSObject+YINMapping.h */,
-				18A0F95E215F4D84002C9531 /* NSObject+YINMapping.m */,
+				18A0F9B3215F78BE002C9531 /* MapingKit */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		18A0F9B3215F78BE002C9531 /* MapingKit */ = {
+			isa = PBXGroup;
+			children = (
+				18A0F9B4215F78BE002C9531 /* YINBindObj.m */,
+				18A0F9B5215F78BE002C9531 /* NSObject+YINMapping.h */,
+				18A0F9B6215F78BE002C9531 /* YINBindObj.h */,
+				18A0F9B7215F78BE002C9531 /* NSObject+YINMapping.m */,
 			);
 			path = MapingKit;
 			sourceTree = "<group>";
@@ -230,11 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A0F963215F5044002C9531 /* Person.m in Sources */,
-				18A0F960215F4D84002C9531 /* NSObject+YINMapping.m in Sources */,
 				18A0F949215F4D4D002C9531 /* ViewController.m in Sources */,
 				18A0F954215F4D50002C9531 /* main.m in Sources */,
+				18A0F9B8215F78BE002C9531 /* YINBindObj.m in Sources */,
 				18A0F946215F4D4D002C9531 /* AppDelegate.m in Sources */,
-				18A0F95F215F4D84002C9531 /* YINBindObj.m in Sources */,
+				18A0F9B9215F78BE002C9531 /* NSObject+YINMapping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
