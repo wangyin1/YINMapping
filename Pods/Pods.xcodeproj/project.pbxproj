@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		068F6DF04EF0371EEC29C6787B63910B /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D6FB284F79679CAFC96E2B374FF302 /* NSObject+MJProperty.m */; };
 		094E6ECE34F0CCB085FAA095D24708F4 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6FF722B58512EAF636070DC72CC7A /* MJPropertyType.m */; };
 		0A1D1BA5F4A6861F59960AE501A61367 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = EB574A30430349912B9AA0E12991FB76 /* MJPropertyKey.m */; };
 		0B67D51C35E79EE135E38084317053DA /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F18D18F4F677D18DFE17FF43AA71A3C6 /* NSObject+MJKeyValue.m */; };
 		11BF0A3C217C5233EF08A6A2623CEA80 /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C4E8583FBE38883C9A8F6CED0B9AB8 /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18E9988C216074BE00AEDE9C /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9988B216074BE00AEDE9C /* NSObject+MJProperty.m */; };
 		1F3AA5B9EBAAD134BF25B0B89FDF108B /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814D74953564BF921B106C5A8A00E18F /* NSString+MJExtension.m */; };
 		1FBFD94316326DCB9485F8704696806B /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = F21D3B6AB8A0B971DE7A16782E2E38A0 /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		383448308BB9C5CB67073E0A8DED4A43 /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDBBBC1617D4C1B338F6208FFEC7DC4 /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435F1A00A9116B101C217B70FBC84B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		58EFF22FEFA78894F9F808799F961BD5 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D90F731A3053DB7591E623D48A281E /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59A28C2CEFC4537C9DAF55D01C4ACED1 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5743C8683707298742EA937DFA456928 /* MJExtension-dummy.m */; };
@@ -50,6 +49,8 @@
 		0019F80481687D0F2A77B985CF7B530B /* Pods-YINMappingTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YINMappingTest-frameworks.sh"; sourceTree = "<group>"; };
 		0A410D0C9C7AA0EF8CB20F85639B8D29 /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
 		0E3BDE87C47FE4DA2F8B63B9423E7E1E /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
+		18E9988A216074BD00AEDE9C /* NSObject+MJProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		18E9988B216074BE00AEDE9C /* NSObject+MJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		1FCC4821CCB48F98FD975C3D549653B3 /* Pods-YINMappingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YINMappingTest.release.xcconfig"; sourceTree = "<group>"; };
 		3A64E23C979FDA76CA8CD655BC366BBB /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
 		41E464343D9F7DF3C98A75F1D2559BD9 /* Pods-YINMappingTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YINMappingTest-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -60,12 +61,11 @@
 		5AB6FF722B58512EAF636070DC72CC7A /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
 		631D1EE75D8100885D5BA7A90DDF6322 /* Pods-YINMappingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YINMappingTest.debug.xcconfig"; sourceTree = "<group>"; };
 		63D90F731A3053DB7591E623D48A281E /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
-		73D6FB284F79679CAFC96E2B374FF302 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "MJExtension/NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		790A2F1E41BCD00D834922AF37F8FCC7 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
 		814D74953564BF921B106C5A8A00E18F /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		90FDA82D8A13EFAC9BD2C5AFFCA5763A /* MJExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-umbrella.h"; sourceTree = "<group>"; };
 		9193F6B3E7DA4B89DB231331D181C4B9 /* NSObject+MJClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "MJExtension/NSObject+MJClass.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97AA7B23CA1D4DFF296591317326CB68 /* Pods-YINMappingTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YINMappingTest-resources.sh"; sourceTree = "<group>"; };
 		A53AF167E9471C64277435C74A1BC722 /* MJExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJExtension.modulemap; sourceTree = "<group>"; };
 		ABFE934D7E606AC700D03A670FB66EAD /* Pods-YINMappingTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YINMappingTest-umbrella.h"; sourceTree = "<group>"; };
@@ -78,10 +78,9 @@
 		CDAA16945786608E1C9962CCE56900A6 /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
 		E18CF79B9C18D81A7E99EA6A3B69C77F /* NSObject+MJCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "MJExtension/NSObject+MJCoding.m"; sourceTree = "<group>"; };
 		E2A3A3C34DED74C98A33BB0948DCBCEB /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
-		E2AB83E4195017EDC9193EBD9CC8EB9E /* Pods_YINMappingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YINMappingTest.framework; path = "Pods-YINMappingTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFA2876EA3DBDDC6F7B592DC05BD920 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJExtension.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2AB83E4195017EDC9193EBD9CC8EB9E /* Pods_YINMappingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YINMappingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFA2876EA3DBDDC6F7B592DC05BD920 /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB574A30430349912B9AA0E12991FB76 /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
-		EDDBBBC1617D4C1B338F6208FFEC7DC4 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
 		EDEF64F721CD61EA9E219DFDE949D325 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1C24B69A9CA3A0E89CD5BFA5FF4A8F /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
 		F18D18F4F677D18DFE17FF43AA71A3C6 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
@@ -197,6 +196,8 @@
 		FCDFB6E3D607F6356178E2CCB780E066 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
+				18E9988A216074BD00AEDE9C /* NSObject+MJProperty.h */,
+				18E9988B216074BE00AEDE9C /* NSObject+MJProperty.m */,
 				EF1C24B69A9CA3A0E89CD5BFA5FF4A8F /* MJExtension.h */,
 				F21D3B6AB8A0B971DE7A16782E2E38A0 /* MJExtensionConst.h */,
 				AF5C8878A9E0690D04B5D51B122920D7 /* MJExtensionConst.m */,
@@ -214,13 +215,10 @@
 				E18CF79B9C18D81A7E99EA6A3B69C77F /* NSObject+MJCoding.m */,
 				BA34D708EF1B72D4A38AC39D19AD1F24 /* NSObject+MJKeyValue.h */,
 				F18D18F4F677D18DFE17FF43AA71A3C6 /* NSObject+MJKeyValue.m */,
-				EDDBBBC1617D4C1B338F6208FFEC7DC4 /* NSObject+MJProperty.h */,
-				73D6FB284F79679CAFC96E2B374FF302 /* NSObject+MJProperty.m */,
 				0A410D0C9C7AA0EF8CB20F85639B8D29 /* NSString+MJExtension.h */,
 				814D74953564BF921B106C5A8A00E18F /* NSString+MJExtension.m */,
 				289181CBE7370411BB36EB73CA0FF60C /* Support Files */,
 			);
-			name = MJExtension;
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
@@ -249,7 +247,6 @@
 				11BF0A3C217C5233EF08A6A2623CEA80 /* NSObject+MJClass.h in Headers */,
 				64298620A2F1EFAB12386F3861E08D40 /* NSObject+MJCoding.h in Headers */,
 				B7B68FDABB146B87FA3C9E987D2014DE /* NSObject+MJKeyValue.h in Headers */,
-				383448308BB9C5CB67073E0A8DED4A43 /* NSObject+MJProperty.h in Headers */,
 				5BD2A9D0D752792C18F1E7F6CDBEB0FA /* NSString+MJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,9 +336,9 @@
 				0A1D1BA5F4A6861F59960AE501A61367 /* MJPropertyKey.m in Sources */,
 				094E6ECE34F0CCB085FAA095D24708F4 /* MJPropertyType.m in Sources */,
 				7410B2A65C0651D85D3B173865D3026B /* NSObject+MJClass.m in Sources */,
+				18E9988C216074BE00AEDE9C /* NSObject+MJProperty.m in Sources */,
 				8EC1C8F8C76EDF5D019E8EBA01C2ABB3 /* NSObject+MJCoding.m in Sources */,
 				0B67D51C35E79EE135E38084317053DA /* NSObject+MJKeyValue.m in Sources */,
-				068F6DF04EF0371EEC29C6787B63910B /* NSObject+MJProperty.m in Sources */,
 				1F3AA5B9EBAAD134BF25B0B89FDF108B /* NSString+MJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,11 +372,7 @@
 				INFOPLIST_FILE = "Target Support Files/MJExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJExtension/MJExtension.modulemap";
 				PRODUCT_MODULE_NAME = MJExtension;
 				PRODUCT_NAME = MJExtension;
@@ -473,11 +466,7 @@
 				INFOPLIST_FILE = "Target Support Files/MJExtension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MJExtension/MJExtension.modulemap";
 				PRODUCT_MODULE_NAME = MJExtension;
 				PRODUCT_NAME = MJExtension;
@@ -507,11 +496,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-YINMappingTest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-YINMappingTest/Pods-YINMappingTest.modulemap";
 				OTHER_LDFLAGS = "";
@@ -544,11 +529,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-YINMappingTest/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-YINMappingTest/Pods-YINMappingTest.modulemap";
 				OTHER_LDFLAGS = "";

@@ -14,6 +14,42 @@
 @end
 
 @implementation YINBindObj
+- (NSArray *)fetchIvarClass:(Class)class
+    {
+        unsigned int outCount = 0;
+        Ivar *ivarList =  class_copyIvarList(class, &outCount);
+        NSMutableArray *muArr = [NSMutableArray arrayWithCapacity:outCount];
+        for(int i = 0; i < outCount;i++)
+        {
+            NSMutableDictionary *muDict = [NSMutableDictionary dictionaryWithCapacity:2];
+            const char *ivarName = ivar_getName(ivarList[i]);
+            const char *ivarType = ivar_getTypeEncoding(ivarList[i]);
+            //        NSString *dataType;
+            //        if(strcmp(ivarType, @encode(int)) == 0)
+            //        {
+            //           dataType = @"int";
+            //        }else if(strcmp(ivarType,@encode(double)) == 0)
+            //        {
+            //           dataType = @"double";
+            //        }
+            //        else if(strcmp(ivarType, @encode(unsigned int)) == 0)
+            //        {
+            //            dataType = @"unsigned int";
+            //        }else if(strcmp(ivarType, @encode(BOOL)) == 0)
+            //        {
+            //           dataType = @"BOOL";
+            //        }
+            //        if(dataType != nil)
+            //        {
+            //        [muDict setObject:dataType forKey:@"dataType"];
+            //        }
+            [muDict setObject:[NSString stringWithUTF8String:ivarName] forKey:@"ivarName"];
+            [muDict setObject:[NSString stringWithUTF8String:ivarType] forKey:@"ivarType"];
+            [muArr addObject:muDict];
+        }
+        free(ivarList);
+        return [NSArray arrayWithArray:muArr];
+}
 
 - (void)didBinded{
     __weak typeof(self)weakSelf = self;
@@ -41,17 +77,32 @@
              [(UIControl *)self.obj addTarget:weakSelf action:@selector(textChange:) forControlEvents:UIControlEventEditingChanged];
              [(UIControl *)self.obj addTarget:weakSelf action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
         }
-        [self.obj.class mj_enumerateProperties:^(MJProperty *property, BOOL *stop) {
-            
+        
+        [[self fetchIvarClass:self.obj.class] enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             @try {
-                [weakSelf.obj addObserver:weakSelf forKeyPath:property.name options:NSKeyValueObservingOptionOld context:nil];
-             
+                if([(NSString *)obj[@"ivarName"] hasPrefix:@"_"]&&[obj[@"ivarName"] length]>1){
+                     [weakSelf.obj addObserver:weakSelf forKeyPath:[obj[@"ivarName"] substringFromIndex:1] options:NSKeyValueObservingOptionOld context:nil];
+                }
+                [weakSelf.obj addObserver:weakSelf forKeyPath:obj[@"ivarName"] options:NSKeyValueObservingOptionOld context:nil];
+                
             } @catch (NSException *exception) {
                 
             } @finally {
                 
             }
+            
         }];
+//        [self.obj.class mj_enumerateProperties:^(MJProperty *property, BOOL *stop) {
+//
+//            @try {
+//                [weakSelf.obj addObserver:weakSelf forKeyPath:property.name options:NSKeyValueObservingOptionOld context:nil];
+//
+//            } @catch (NSException *exception) {
+//
+//            } @finally {
+//
+//            }
+//        }];
     }
 }
 
@@ -111,15 +162,27 @@
             }
         }];
     }else{
-        [self.obj.class mj_enumerateProperties:^(MJProperty *property, BOOL *stop) {
+        [[self fetchIvarClass:self.obj.class] enumerateObjectsUsingBlock:^(NSDictionary* _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             @try {
-                [weakSelf.obj removeObserver:weakSelf forKeyPath:property.name];
+                if([(NSString *)obj[@"ivarName"] hasPrefix:@"_"]&&[obj[@"ivarName"] length]>1){
+                    [weakSelf.obj removeObserver:weakSelf forKeyPath: [obj[@"ivarName"] substringFromIndex:1]];
+                }
+                [weakSelf.obj removeObserver:weakSelf forKeyPath:obj[@"ivarName"]];
             } @catch (NSException *exception) {
                 
             } @finally {
                 
             }
         }];
+//        [self.obj.class mj_enumerateProperties:^(MJProperty *property, BOOL *stop) {
+//            @try {
+//                [weakSelf.obj removeObserver:weakSelf forKeyPath:property.name];
+//            } @catch (NSException *exception) {
+//                
+//            } @finally {
+//                
+//            }
+//        }];
     }
 }
 

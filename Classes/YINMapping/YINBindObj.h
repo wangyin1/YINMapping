@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MJExtension.h"
+//#import "MJExtension.h"
+#import <objc/runtime.h>
 
 //回调 bind： 哪绑定源一个发生了变化。property：对应的什么属性变化了
 typedef void(^YINMappingBlock)(NSObject *bind,NSString *property);

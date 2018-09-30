@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YINMapping"
-  s.version      = "0.0.3"
-  s.summary      = "测试一pod下这个东西"
+  s.version      = "0.0.2"
+  s.summary      = "YINMapping ios kvo 响应编程"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "测试一pod下这个东西啊"
+  s.description  = "ios kvo 响应编程 使用便捷"
 
   s.homepage     = "https://github.com/wangyin1/YINMapping"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    s.dependency "MJExtension"
+#  s.dependency "MJExtension"
 
 end
