@@ -18,3 +18,5 @@ kvo响应式编程封装
 //    [self.label y_addBind:[YINBindObj obj:self.person keyPath:@"name"] Mapping:^(NSObject *bind, NSString *property) {
 //        weakSelf.label.text = weakSelf.person.name;
 //    }];
+
+pod 'YINMapping'
