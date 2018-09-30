@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YINMapping"
-  s.version      = "0.0.2"
-  s.summary      = "A short description of YINMapping. hhh"
+  s.version      = "0.0.3"
+  s.summary      = "测试一pod下这个东西"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "hh"
+  s.description  = "测试一pod下这个东西"
 
   s.homepage     = "https://github.com/wangyin1/YINMapping"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -63,10 +63,10 @@ Pod::Spec.new do |s|
   #
 
 #s.platform     = :ios
-    s.platform     = :ios, "9.0"
+#s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
-#s.ios.deployment_target = "9.0"
+    s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
