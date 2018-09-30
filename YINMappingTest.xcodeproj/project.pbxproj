@@ -93,12 +93,12 @@
 		18A0F9B2215F78BE002C9531 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18A0F9B3215F78BE002C9531 /* MapingKit */,
+				18A0F9B3215F78BE002C9531 /* YINMapping */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
 		};
-		18A0F9B3215F78BE002C9531 /* MapingKit */ = {
+		18A0F9B3215F78BE002C9531 /* YINMapping */ = {
 			isa = PBXGroup;
 			children = (
 				18A0F9B4215F78BE002C9531 /* YINBindObj.m */,
@@ -106,7 +106,7 @@
 				18A0F9B6215F78BE002C9531 /* YINBindObj.h */,
 				18A0F9B7215F78BE002C9531 /* NSObject+YINMapping.m */,
 			);
-			path = MapingKit;
+			path = YINMapping;
 			sourceTree = "<group>";
 		};
 		340842E3E1A653F2DF88C89B /* Pods */ = {
